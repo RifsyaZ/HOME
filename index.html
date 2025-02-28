@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mata Kuliah WEB</title>
+    <link rel="icon" type="image/png" href="Image/pinguin.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(244, 244, 244, 0.9), rgba(0, 0, 0, 0.5)), 
+                        url('footer-bg.jpg') no-repeat center bottom;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 30px;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            width: 200px;
+            border-radius: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 90%;
+            height: 280px; 
+            object-fit: cover; 
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        footer {
+            margin-top: 50px;
+            padding: 10px;
+            text-align: center;
+            background-color: #fffbfb; 
+        }
+        .footer-img {
+            width: 20%; 
+            max-height: 200px; 
+            object-fit: cover; 
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Anak Buah Fawwas</h1>
+
+    <div class="container">
+        <div class="card" onclick="location.href='Ricky.html'">
+            <img src="Image/skipper.jpg" alt="Ricky">
+            <h2>Ricky</h2>
+        </div>
+
+        <div class="card" onclick="location.href='haha.html'">
+            <img src="Image/kowalsky.jpg" alt="Mahesa">
+            <h2>Mahesa</h2>
+        </div>
+
+        <div class="card" onclick="location.href='hoho.html'">
+            <img src="Image/privat.jpg" alt="Bayu">
+            <h2>Bayu</h2>
+        </div>
+
+        <div class="card" onclick="location.href='Syarif.html'">
+            <img src="Image/rico.jpg" alt="Syarif">
+            <h2>Syarif</h2>
+        </div>
+    </div>
+
+    <footer>
+        <img src="Image/ums.jpg" alt="Footer Gambar" class="footer-img">
+    </footer>
+
+</body>
+</html>
